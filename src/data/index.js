@@ -1,0 +1,5 @@
+export const APP_LAYOUT_HEIGHT = {
+  HEADER: 78,
+  FOOTER: 76,
+  CONTENT_HEADER: 78,
+};
