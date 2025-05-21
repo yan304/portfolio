@@ -7,7 +7,7 @@ export default function DashboardLayout({ children }) {
       <div className="flex flex-col min-h-screen text-white">
         <body>
           <Navbar />
-          <main className="z-10" >{children}</main>
+          <main className="z-10 flex justify-center h-[calc(100vh-78px)]" >{children}</main>
         </body>
       </div>
     </html>
