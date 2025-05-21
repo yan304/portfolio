@@ -5,14 +5,14 @@ const navigation = [
   { name: 'Home', link: '/home', current: true },
   { name: 'About', link: '/about', current: false },
   { name: 'Portfolio', link: '/portfolio', current: false },
-  { name: 'Testimonials', link: '/testimonials', current: false },
-  { name: 'Contact', link: '/contact', current: false },
+  // { name: 'Testimonials', link: '/testimonials', current: false },
+  // { name: 'Contact', link: '/contact', current: false },
 ]
 
 export const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="fixed w-full bg-[#222222] border-gray-200 dark:bg-gray-900 h-[78px] pt-2">
+    <nav className="fixed w-full bg-[#222222] border-gray-200 dark:bg-gray-900 h-[78px] pt-2 z-[99]">
       <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto py-4 px-8">
         <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
@@ -27,7 +27,7 @@ export const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {navigation.map((item, key) => (
-              <li>
+              <li key={key}>
                 <a key={key} href={item.link} className={pathname.includes(item.link) ? "block text-xl font-semibold py-2 px-3 text-pink-600 bg-blue-700 rounded-sm md:bg-transparent md:text-pink-600 md:p-0" :
                   "block text-xl font-semibold py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"} aria-current="page">{item.name}</a>
               </li>
