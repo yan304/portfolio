@@ -25,7 +25,7 @@ const data = [
 
 export const Portfolio = () => {
   return <div className="flex items-center">
-    <div className="grid grid-cols-3 gap-12">
+    <div className="grid grid-cols-3 gap-12 pt-36">
       {data.map((item) => 
         <div className="flex flex-col gap-2 items-center wrap w-[300px]">
           <div className="h-[150px] flex items-center bg-white rounded-xl py-4">

@@ -10,7 +10,7 @@ const list = [
 
 export const About = () => {
   return <div className="flex justify-around items-center min-h-screen max-w-screen-2xl">
-    <div className="flex flex-col overflow-y-auto pt-[500px] pb-24">
+    <div className="flex flex-col overflow-y-auto mt-[750px] pb-24">
       <div className="text-3xl font-light max-w-screen-md">
         <div className="text-5xl"><b>🧑‍💻 About Me</b></div><br />
         &emsp;&emsp;Hi, I'm Marcelino, a <b>Mid Software Engineer</b> with a passion for building web/backend/full-stack applications. I specialize in Frontend, and I love solving real-world problems with clean, scalable code.
